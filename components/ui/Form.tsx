@@ -7,21 +7,19 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
-  
 } from "@tabler/icons-react";
 
 const Textarea = (props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) => {
-    return (
-      <textarea
-        {...props}
-        className={cn(
-          "w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
-          props.className
-        )}
-      />
-    );
-  };
-  
+  return (
+    <textarea
+      {...props}
+      className={cn(
+        "w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
+        props.className
+      )}
+    />
+  );
+};
 
 export function SignupFormDemo() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,7 +32,7 @@ export function SignupFormDemo() {
         Contact Me 
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        You can contact me by submitting the form below anytime. Let's connect !
+        You can contact me by submitting the form below anytime. Let&#39;s connect!
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
@@ -78,9 +76,9 @@ export function SignupFormDemo() {
           >
             <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <a href="https://github.com/sudhanshu-dhawan">
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              GitHub
-            </span>
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                GitHub
+              </span>
             </a>
             
             <BottomGradient />
@@ -91,9 +89,9 @@ export function SignupFormDemo() {
           >
             <IconBrandLinkedin className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <a href="https://www.linkedin.com/in/sudhanshu-dhawan-199044253/">
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              LinkedIn
-            </span>
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                LinkedIn
+              </span>
             </a>
             
             <BottomGradient />
@@ -104,9 +102,9 @@ export function SignupFormDemo() {
           >
             <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <a href="https://www.instagram.com/sudhanshu_334?igsh=NHdlejJjYTA5dTQz">
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Instagram
-            </span>
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                Instagram
+              </span>
             </a>
             
             <BottomGradient />
