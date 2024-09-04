@@ -34,7 +34,7 @@ export default function Home() {
           <RecentProjects  /> 
          </div>
          
-       <div>
+       <div className="z-50">
         <SignupFormDemo/>
        </div>
        <div>

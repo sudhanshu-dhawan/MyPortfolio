@@ -22,7 +22,7 @@ function Hero() {
         <Spotlight className='top-28 -left-80  h-[80vh] w-[50vw]' fill='purple'/>
         <Spotlight className='top-28 -left-80  h-[80vh] w-[50vw]' fill='white'/>
         <div className='  lg:absolute lg:left-[900px] top-24 z-50 sm:relative lg:ml-0 lg:mt-0 sm:ml-[100px] sm:mt-[100px] ' >
-       <Image src={Sudhanshu2} alt="Sudhanshu Dhawan" className=' lg:ml-0  relative left-15 -top-14 lg:top-0 h-[300px] w-[300px] rounded-full' />
+       <Image src={Sudhanshu2} alt="Sudhanshu Dhawan" className=' lg:ml-0  relative left-15 -top-14 lg:top-0 h-[300px] w-[300px] rounded-full z-50' />
       
        
        </div>
