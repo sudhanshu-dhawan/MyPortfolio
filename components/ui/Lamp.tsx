@@ -2,14 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import ReactImage from "../../images/React-icon.webp"
-import NodeImage from "../../images/Node.js_logo.webp"
-import JavaScriptImage from "../../images/javascript-1.webp"
-import HTML from "../../images/html-1.webp"
-import CSS from "../../images/CSS-Logo-500x313.webp"
-import CPP from "../../images/cpp_logo.webp"
-import Postman from "../../images/postman.webp"
-import Mongodb from "../../images/MongoDB-Logo.wine.webp"
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaCuttlefish, FaServer, FaDatabase } from "react-icons/fa";
+
 export function LampDemo() {
   return (
     <LampContainer>
@@ -26,67 +20,18 @@ export function LampDemo() {
         Tech Stack 
       </motion.h1>
 
-      <div className="flex justify-center mt-12 space-x-10">
-        <motion.img
-          src={ReactImage.src}
-          alt="React Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.img
-          src={NodeImage.src}
-          alt="Node.js Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.img
-          src={JavaScriptImage.src}
-          alt="JavaScript Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-         <motion.img
-          src={HTML.src}
-          alt="JavaScript Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-         <motion.img
-          src={CSS.src}
-          alt="JavaScript Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
+      <div className="flex justify-center mt-12 space-x-10 text-6xl">
+        <FaReact className="text-blue-500" />
+        <FaNodeJs className="text-green-500" />
+        <FaJs className="text-yellow-500" />
+        <FaHtml5 className="text-orange-500" />
+        <FaCss3Alt className="text-blue-600" />
       </div>
-      <div className="flex justify-center mt-8 space-x-10">
-      <motion.img
-          src={CPP.src}
-          alt="JavaScript Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.img
-          src={Postman.src}
-          alt="JavaScript Logo"
-          className="w-24 h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.img
-          src={Mongodb.src}
-          alt="JavaScript Logo"
-          className="w-[270px] h-24"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
+      <div className="flex justify-center mt-8 space-x-10 text-6xl">
+        <FaCuttlefish className="text-blue-400" />
+        <FaServer className="text-gray-500" />
+        <FaDatabase className="text-green-700" />
       </div>
-     
     </LampContainer>
   );
 }
@@ -161,10 +106,8 @@ export const LampContainer = ({
           }}
           className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
         ></motion.div>
-
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
-
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
         {children}
       </div>

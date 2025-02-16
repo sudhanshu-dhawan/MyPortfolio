@@ -1,7 +1,9 @@
 import Image1 from '@/images/codingverse (2).png'
 import Image2 from '@/images/Giffy-removebg-preview.png'
 import Image3 from '@/images/chef-cooker-dessert-cook.jpg'
-import Image4 from "@/images/hand-with-card-laptop.jpg"
+import Image7 from "@/images/chatImage.webp"
+import Image5 from '@/images/travellers-celebrating.webp'
+import Image6 from '@/images/Image6.jpg'
 import { FaReact, FaNodeJs } from 'react-icons/fa'; // ReactJS and Node.js icons
 import { SiMongodb } from "react-icons/si";
 import { SiTailwindcss } from 'react-icons/si'; 
@@ -15,17 +17,20 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Know Who I Am ",
       description: [
         
-        "Hi, I'm Sudhanshu Dhawan, a passionate third-year Computer Engineering student at Thapar University.",
-        "My journey in the tech world began with curiosity and quickly evolved into a deep fascination with web development.",
-        "I thrive on the challenge of turning complex problems into elegant, user-friendly solutions.",
-        "As a web development enthusiast, I'm constantly exploring new technologies and refining my skills in both front-end and back-end .",
-        "My projects reflect my commitment to creating responsive, dynamic, and visually appealing web experiences.",
-        "Beyond coding, I enjoy collaborating with like-minded individuals to bring innovative ideas to life.",
-        "I'm always eager to learn and grow, and I look forward to contributing to the ever-evolving field of web development.",
-        
+        <div className="space-y-2 text-neutral-800 dark:text-neutral-200">
+  <h2 className="text-xl font-bold">Know Who I Am</h2>
+  <ul className="list-disc pl-5 space-y-2">
+    <li>Hi, I'm Sudhanshu Dhawan, a passionate third-year Computer Engineering student at Thapar University.</li>
+    <li>My journey in the tech world began with curiosity and quickly evolved into a deep fascination with web development.</li>
+    <li>I thrive on the challenge of turning complex problems into elegant, user-friendly solutions.</li>
+    <li>As a web development enthusiast, I'm constantly exploring new technologies and refining my skills in both front-end and back-end.</li>
+    <li>My projects reflect my commitment to creating responsive, dynamic, and visually appealing web experiences.</li>
+    <li>Beyond coding, I enjoy collaborating with like-minded individuals to bring innovative ideas to life.</li>
+    <li>I'm always eager to learn and grow, and I look forward to contributing to the ever-evolving field of web development.</li>
+  </ul>
+</div>
       ],
 
 
@@ -100,15 +105,17 @@ export const navItems = [
       des: "An edtech platform made for students to learn coding. Different instructors can sell their own courses !",
       img: Image1,
       iconLists: [FaReact, SiTailwindcss, FaNodeJs ,SiMongodb],
-      link: "https://coding-verse.vercel.app/",
+      link: "https://codingverse-full.onrender.com/",
     },
     {
+      
       id: 2,
-      title: "GIFFY",
-      des: "Basic Application which generates random gifs as well as gifs on user input.",
-      img: Image2,
-      iconLists: [FaReact, SiTailwindcss],
-      link: "https://sudhanshu-dhawan.github.io/gif_generator/",
+        title: "Travel Companion",
+        des: "A travel companion app with real-time location-based assistance using Google Maps API and Rapid API",
+
+        img: Image5,
+        iconLists: [FaReact, SiTailwindcss],
+        link: "https://travel-companion-flax.vercel.app/",
     },
     {
         id: 3,
@@ -118,15 +125,34 @@ export const navItems = [
         iconLists: [FaReact, SiTailwindcss],
         link: "https://littlechef-brown.vercel.app/",
       },
+      
       {
-        id: 4,
-        title: "E-Banking",
-        des: "A  simple banking application which can perform basic banking operations. This site is in progress...",
-
-        img: Image4,
-        iconLists: [FaReact, SiTailwindcss],
-        link: "https://github.com/sudhanshu-dhawan/IETE_E-Banking",
+       id: 4,
+      title: "GIFFY",
+      des: "Basic Application which generates random gifs as well as gifs on user input.",
+      img: Image2,
+      iconLists: [FaReact, SiTailwindcss],
+      link: "https://sudhanshu-dhawan.github.io/gif_generator/",
       },
+      {
+        id: 5,
+        title: "IPL INSIGHT",
+        des: "Ipl match winner prediction using machine learning",
+
+        img: Image6,
+        iconLists: [FaReact, SiTailwindcss],
+        link: "https://github.com/sudhanshu-dhawan/IPL_INSIGHT",
+      },
+      {
+        id: 6,
+        title: "Whisp",
+        des: "A real-time chat application with instant messaging and user authentication for seamless communication",
+
+        img: Image7,
+        iconLists: [FaReact, SiTailwindcss],
+        link: "https://chatapp-frontend-dipo.onrender.com/",
+      },
+     
 
   ];
   

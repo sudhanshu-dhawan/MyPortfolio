@@ -26,12 +26,13 @@ export function SignupFormDemo() {
     e.preventDefault();
     console.log("Form submitted");
   };
+
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8  bg-white dark:bg-black">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-        Contact Me 
+    <div className="max-w-md w-full mx-auto p-6 md:p-8 rounded-2xl bg-black text-white relative border border-gray-800 transition-all duration-300 hover:border-transparent hover:shadow-[0_0_15px_3px_rgba(0,128,255,0.6)]">
+      <h2 className="font-bold text-xl text-neutral-200 text-center">
+        Contact Me
       </h2>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
+      <p className="text-neutral-400 text-sm text-center mt-2">
         You can contact me by submitting the form below anytime. Let&#39;s connect!
       </p>
 
@@ -52,77 +53,53 @@ export function SignupFormDemo() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <Textarea
-            id="message"
-            placeholder="Enter your message here"
-            rows={4} // Adjust the rows for the size of the textarea
-          />
+          <Textarea id="message" placeholder="Enter your message here" rows={4} />
         </LabelInputContainer>
 
         <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+          className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-md h-10 font-medium shadow-md transition-all duration-300 transform hover:scale-105"
           type="submit"
         >
           Submit &rarr;
-          <BottomGradient />
         </button>
 
-        <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+        <div className="bg-gradient-to-r from-transparent via-neutral-600 to-transparent my-8 h-[1px] w-full" />
 
         <div className="flex flex-col space-y-4">
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
-          >
-            <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <a href="https://github.com/sudhanshu-dhawan">
-              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                GitHub
-              </span>
-            </a>
-            
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
-          >
-            <IconBrandLinkedin className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <a href="https://www.linkedin.com/in/sudhanshu-dhawan-199044253/">
-              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                LinkedIn
-              </span>
-            </a>
-            
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
-          >
-            <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <a href="https://www.instagram.com/sudhanshu_334?igsh=NHdlejJjYTA5dTQz">
-              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                Instagram
-              </span>
-            </a>
-            
-            <BottomGradient />
-          </button>
+          {socialLinks.map((link, index) => (
+            <button
+              key={index}
+              className="flex space-x-2 items-center justify-start px-4 w-full text-white rounded-md h-10 font-medium shadow-md bg-gray-900 hover:bg-gray-800 transition-all duration-300"
+              type="button"
+              onClick={() => window.open(link.url, "_blank")}
+            >
+              {link.icon}
+              <span className="text-sm">{link.name}</span>
+            </button>
+          ))}
         </div>
       </form>
     </div>
   );
 }
 
-const BottomGradient = () => {
-  return (
-    <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-    </>
-  );
-};
+const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/sudhanshu-dhawan",
+    icon: <IconBrandGithub className="h-4 w-4 text-neutral-300" />,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/sudhanshu-dhawan-199044253/",
+    icon: <IconBrandLinkedin className="h-4 w-4 text-neutral-300" />,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/sudhanshu_334?igsh=NHdlejJjYTA5dTQz",
+    icon: <IconBrandInstagram className="h-4 w-4 text-neutral-300" />,
+  },
+];
 
 const LabelInputContainer = ({
   children,
@@ -131,9 +108,5 @@ const LabelInputContainer = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn("flex flex-col space-y-2 w-full", className)}>{children}</div>;
 };

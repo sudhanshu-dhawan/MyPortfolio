@@ -3,7 +3,6 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 
-
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Footer from "@/components/ui/Footer";
 import { SignupFormDemo } from "@/components/ui/Form";
@@ -16,11 +15,13 @@ export default function Home() {
   return (
    <main className="relative bg-black justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
        <div className="max-w-7xl w-full">
-        <FloatingNav
-        navItems={[
-          {name:"Home", link:"/",icon:<FaHome/>}
-        ]}
-        />
+       <FloatingNav
+  navItems={[
+    { name: "Home", link: "/", icon: <FaHome /> },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact Me", link: "#contact" },
+  ]}
+/>
         <div>
         <Hero/>
         </div>
@@ -30,11 +31,11 @@ export default function Home() {
          <div className="mt-[40px]">
           <LampDemo/>
          </div>
-         <div className="mt-[-400px]">
-          <RecentProjects  /> 
-         </div>
+         <div id="projects" className="mt-[-400px]">
+          <RecentProjects />
+        </div>
          
-       <div className="z-50">
+       <div className="z-50" id="contact">
         <SignupFormDemo/>
        </div>
        <div>

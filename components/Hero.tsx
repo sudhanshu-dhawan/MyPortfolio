@@ -2,11 +2,10 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffects'
 import Image from 'next/image'
-import Sudhanshu from "../images/sudhanshu_portfolio.png"
 import Sudhanshu2 from "../images/sudhanshu_linkedin_pic.jpeg"
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
-import { ResumeLink } from './ui/ResumeLink'
+
 
 
 

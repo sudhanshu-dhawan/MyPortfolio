@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Sudhanshu Dhawan. Made with Love . All rights reserved.
+          &copy; {new Date().getFullYear()} Sudhanshu Dhawan. Made with Love .
         </p>
       </div>
     </footer>
