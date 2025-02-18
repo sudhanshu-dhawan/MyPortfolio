@@ -9,7 +9,7 @@ import { SignupFormDemo } from "@/components/ui/Form";
 import { LampDemo } from "@/components/ui/Lamp";
 import { AnimatedTooltip } from "@/components/ui/Tooltip";
 import { FaHome } from "react-icons/fa";
-import { SiNodedotjs, SiPostman, SiC, SiCplusplus, SiJavascript, SiMongodb, SiExpress, SiReact, SiReactnative, SiRender } from "react-icons/si";
+import { SiNodedotjs, SiPostman, SiC, SiCplusplus, SiJavascript, SiMongodb, SiExpress, SiReact, SiRender } from "react-icons/si";
 
 export default function Home() {
 
