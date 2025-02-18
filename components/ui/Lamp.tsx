@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { SiNodedotjs, SiPostman, SiC, SiCplusplus, SiJavascript, SiMongodb, SiExpress, SiReact, SiReactnative, SiRender } from "react-icons/si";
+import { SiNodedotjs, SiPostman, SiC, SiCplusplus, SiJavascript, SiMongodb, SiExpress, SiReact, SiRender } from "react-icons/si";
 
 import { AnimatedTooltip } from "./Tooltip";
 export function LampDemo() {
