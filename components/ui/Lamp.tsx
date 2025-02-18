@@ -2,9 +2,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaCuttlefish, FaServer, FaDatabase } from "react-icons/fa";
+import { SiNodedotjs, SiPostman, SiC, SiCplusplus, SiJavascript, SiMongodb, SiExpress, SiReact, SiReactnative, SiRender } from "react-icons/si";
 
+import { AnimatedTooltip } from "./Tooltip";
 export function LampDemo() {
+    const tools = [
+      { id: 1, name: "Node.js", designation: "Backend Runtime", icon: <SiNodedotjs className="text-green-500 text-5xl" /> },
+      { id: 2, name: "Postman", designation: "API Testing Tool", icon: <SiPostman className="text-orange-500 text-5xl" /> },
+      { id: 3, name: "C", designation: "Programming Language", icon: <SiC className="text-blue-500 text-5xl" /> },
+      { id: 4, name: "C++", designation: "Programming Language", icon: <SiCplusplus className="text-blue-700 text-5xl" /> },
+      { id: 5, name: "JavaScript", designation: "Programming Language", icon: <SiJavascript className="text-yellow-500 text-5xl" /> },
+      { id: 6, name: "MongoDB", designation: "Database", icon: <SiMongodb className="text-green-700 text-5xl" /> },
+      { id: 7, name: "Express.js", designation: "Backend Framework", icon: <SiExpress className="text-gray-500 text-5xl" /> },
+      { id: 8, name: "React.js", designation: "Frontend Library", icon: <SiReact className="text-blue-400 text-5xl" /> },
+      { id: 10, name: "Render", designation: "Cloud Deployment", icon: <SiRender className="text-indigo-500 text-5xl" /> },
+    ];
   return (
     <LampContainer>
       <motion.h1
@@ -20,18 +32,7 @@ export function LampDemo() {
         Tech Stack 
       </motion.h1>
 
-      <div className="flex justify-center mt-12 space-x-10 text-6xl">
-        <FaReact className="text-blue-500" />
-        <FaNodeJs className="text-green-500" />
-        <FaJs className="text-yellow-500" />
-        <FaHtml5 className="text-orange-500" />
-        <FaCss3Alt className="text-blue-600" />
-      </div>
-      <div className="flex justify-center mt-8 space-x-10 text-6xl">
-        <FaCuttlefish className="text-blue-400" />
-        <FaServer className="text-gray-500" />
-        <FaDatabase className="text-green-700" />
-      </div>
+      <AnimatedTooltip items={tools} />
     </LampContainer>
   );
 }
