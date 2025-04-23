@@ -1,5 +1,5 @@
-# 🌐 Personal Portfolio Website - [Sudhanshu Dhawan](https://my-portfolio-ten-beige-44.vercel.app/)
-
+# 🌐 Personal Portfolio Website -(https://my-portfolio-ten-beige-44.vercel.app/)
+Sudhanshu Dhawan
 Welcome to my personal portfolio website built using **Next.js**, **shadcn/ui**, and **Tailwind CSS**, and deployed with **Vercel**.  
 This website showcases my projects, skills, and professional experience as a full-stack developer.
 
