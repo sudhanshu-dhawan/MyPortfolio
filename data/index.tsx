@@ -4,9 +4,11 @@ import Image3 from '@/images/chef-cooker-dessert-cook.jpg'
 import Image7 from "@/images/chatImage.webp"
 import Image5 from '@/images/travellers-celebrating.webp'
 import Image6 from '@/images/Image6.jpg'
-import { FaReact, FaNodeJs } from 'react-icons/fa'; // ReactJS and Node.js icons
-import { SiMongodb } from "react-icons/si";
-import { SiTailwindcss } from 'react-icons/si'; 
+import Interview from '@/images/Interview.png'
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiTailwindcss, SiFirebase, SiNextdotjs, SiVercel } from 'react-icons/si';
+import { MdChatBubbleOutline } from 'react-icons/md'; // for Vapi (if it's used for AI chat)
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -99,6 +101,7 @@ export const navItems = [
   ];
   
   export const projects = [
+
     {
       id: 1,
       title: "Coding Verse ",
@@ -107,9 +110,18 @@ export const navItems = [
       iconLists: [FaReact, SiTailwindcss, FaNodeJs ,SiMongodb],
       link: "https://codingverse-full.onrender.com/",
     },
+
+    {
+      id: 2,
+      title: "IntervueAI",
+      des: "A platform where you can take customized realtime interviews with AI. Its an ongoing project.",
+      img: Interview,
+      iconLists: [SiFirebase , SiNextdotjs , SiTailwindcss , MdChatBubbleOutline  ],
+      link: "https://github.com/sudhanshu-dhawan/IntervueAI",
+    },
     {
       
-      id: 2,
+      id: 3,
         title: "Travel Companion",
         des: "A travel companion app with real-time location-based assistance using Google Maps API and Rapid API",
 
@@ -118,7 +130,7 @@ export const navItems = [
         link: "https://travel-companion-flax.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Little Chef",
         des: "An application which can give cooking recipes on user input.",
         img: Image3,
@@ -127,7 +139,7 @@ export const navItems = [
       },
       
       {
-       id: 4,
+       id: 5,
       title: "GIFFY",
       des: "Basic Application which generates random gifs as well as gifs on user input.",
       img: Image2,
@@ -135,7 +147,7 @@ export const navItems = [
       link: "https://sudhanshu-dhawan.github.io/gif_generator/",
       },
       {
-        id: 5,
+        id: 6,
         title: "IPL INSIGHT",
         des: "Ipl match winner prediction using machine learning",
 
@@ -144,7 +156,7 @@ export const navItems = [
         link: "https://github.com/sudhanshu-dhawan/IPL_INSIGHT",
       },
       {
-        id: 6,
+        id: 7,
         title: "Whisp",
         des: "A real-time chat application with instant messaging and user authentication for seamless communication",
 
